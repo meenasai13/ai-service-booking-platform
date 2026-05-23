@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Booking Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Service Booking Platform</h1>
+
+        <h2>User Registration</h2>
+
+        <div class="form">
+
+            <input type="text" id="name" placeholder="Enter Name">
+
+            <input type="email" id="email" placeholder="Enter Email">
+
+            <input type="password" id="password" placeholder="Enter Password">
+
+            <button onclick="registerUser()">
+                Register
+            </button>
+
+        </div>
+
+        <h2>User Login</h2>
+
+        <div class="form">
+
+            <input type="email" id="loginEmail" placeholder="Enter Email">
+
+            <input type="password" id="loginPassword" placeholder="Enter Password">
+
+            <button onclick="loginUser()">
+                Login
+            </button>
+
+        </div>
+
+        <div class="buttons">
+
+            <button onclick="getProviders()">
+                Show Providers
+            </button>
+
+            <button onclick="getRecommendation()">
+                AI Recommendation
+            </button>
+
+            <button onclick="getBookings()">
+                View Bookings
+            </button>
+
+            <button onclick="showChatbot()">
+                AI Assistant
+            </button>
+
+            <button onclick="showDashboard()">
+                Dashboard
+            </button>
+
+        </div>
+
+        <div id="providersSection">
+
+            <!-- <h2>Providers</h2> -->
+
+            <div id="output"></div>
+
+        </div>
+
+        <div id="bookingsSection">
+
+            <!-- <h2>Booking History</h2> -->
+
+            <div id="bookings"></div>
+
+        </div>
+
+        <div id="chatbot">
+
+            <h2>AI Assistant</h2>
+
+            <input type="text" id="userMessage"
+                placeholder="Ask something...">
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+            <div id="chatOutput"></div>
+
+        </div>
+
+        <div id="dashboard">
+
+            <h2>User Dashboard</h2>
+
+            <div id="dashboardContent"></div>
+
+        </div>        
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
